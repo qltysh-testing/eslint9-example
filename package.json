@@ -1,0 +1,16 @@
+{
+  "name": "eslint-example-app",
+  "version": "1.0.0",
+  "description": "Simple JavaScript application with ESLint configuration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint ."
+  },
+  "keywords": ["calculator", "eslint", "example"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.45.0"
+  }
+}
