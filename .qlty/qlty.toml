@@ -63,4 +63,4 @@ default = true
 [[plugin]]
 name = "eslint"
 version = "9.35.0"
-config_files = [".eslintrc.json"]
+# config_files = [".eslintrc.json"]
