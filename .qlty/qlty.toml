@@ -53,14 +53,11 @@ test_patterns = [
   "**/spec_*.*",
 ]
 
-[smells]
-mode = "comment"
-
 [[source]]
 name = "default"
 default = true
 
-[[plugin]]
-name = "eslint"
-version = "9.35.0"
-# config_files = [".eslintrc.json"]
+[[source]]
+name = "qlty-source"
+repository = "git@github.com:qltysh-testing/qlty-source.git"
+branch = "main"
