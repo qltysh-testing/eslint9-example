@@ -7,10 +7,17 @@
     "start": "node index.js",
     "lint": "eslint ."
   },
-  "keywords": ["calculator", "eslint", "example"],
+  "keywords": [
+    "calculator",
+    "eslint",
+    "example"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^9.35.0"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0"
   }
 }
