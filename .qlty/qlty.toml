@@ -59,5 +59,4 @@ default = true
 
 [[source]]
 name = "qlty-source"
-repository = "git@github.com:qltysh-testing/qlty-source.git"
-branch = "main"
+directory = "../qlty-source"
