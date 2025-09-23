@@ -57,38 +57,6 @@ test_patterns = [
 name = "default"
 default = true
 
-[plugins.definitions.eslint9]
-runtime = "node"
-package = "eslint"
-file_types = ["javascript", "typescript", "jsx", "tsx"]
-affects_cache = [".eslintignore", "package.json", "tsconfig.json"]
-latest_version = "9.35.0"
-known_good_version = "9.7.0"
-version_command = "eslint --version"
-description = "Javascript and ECMAScript linter"
-package_file_candidate = "package.json"
-package_file_candidate_filters = ["eslint", "jest", "prettier"]
-
-[[plugins.definitions.eslint9.drivers.lint.version]]
-version_matcher = ">=9.0.0"
-script = "eslint --output-file ${tmpfile} --format json ${target}"
-batch_by = "config_file"
-copy_configs_into_tool_install = true
-error_codes = [2]
-success_codes = [0, 1]
-config_files = [
-  "eslint.config.js",
-  "eslint.config.ts",
-  "eslint.config.mjs",
-  "eslint.config.cjs",
-]
-output = "tmpfile"
-output_format = "eslint"
-batch = true
-cache_results = true
-max_batch = 40
-suggested = "config"
-
 [[plugin]]
-name = "eslint9"
+name = "eslint"
 version = "9.35.0"
